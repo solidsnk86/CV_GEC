@@ -2,8 +2,8 @@
 
 rm -rf .next
 
-npm install
+pnpm install --no-frozen-lockfile
 
-npm run build
+pnpm run build
 
 vercel
