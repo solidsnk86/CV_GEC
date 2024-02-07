@@ -11,7 +11,7 @@ export const CSV_URL_EDUCATION =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vT95v4u7iHRM4GM5Nqsb-JVzFFVqtdlSc4bLunZuV7LqKsa3FUIRGUE-GPde42u9zJD3osLinCiAG_8/pub?output=csv";
 
 export const METADATA = {
-  title: "CV Gerardo Calcagni",
+  title: "Currículum Vitae Gerardo Calcagni",
   description:
     "Soy un Cadista especializado en Obra Civil con +10 años de experiencia, Arquitectura y Piping con experiencia en el sector de Oil & Gas. También ofrezco servicios de dibujo en modalidad home office, proporcionando Planos Municipales para Viviendas Unifamiliares y otras obras. Mi enfoque es la precisión y la eficiencia en cada proyecto.",
 };
@@ -24,3 +24,6 @@ export const WHATSAPP_URL =
 
 export const MAIL = "gerardo.calcagni@gmail.com";
 export const TEL = "+5492604586538";
+
+const date = new Date();
+export const YEAR = date.getFullYear();
