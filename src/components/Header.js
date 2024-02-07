@@ -16,7 +16,7 @@ const columnName = [
   "EMAIL",
   "TEL",
   "IMAGEN",
-  "ACERCA",
+  "ACTUALIZACION",
 ];
 
 export const Header = () => {
@@ -70,6 +70,10 @@ export const Header = () => {
                   <Whatsapp />
                 </a>
               </footer>
+              <ul className="py-2 flex space-x-3">
+                <span className="list" />
+                <p className="text-xs">Actualizado: {D.ACTUALIZACION}</p>
+              </ul>
             </header>
           </div>
           <figure>

@@ -50,6 +50,16 @@ h4 {
   text-wrap: balance;
 }
 
+.list::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: lightgreen;
+  border-radius: 100%;
+  margin-top: 1px;
+}
+
 p {
   color: #666;
   font-size: 0.9rem;
