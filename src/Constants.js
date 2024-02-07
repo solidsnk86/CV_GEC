@@ -20,7 +20,7 @@ export const LINKEDIN_URL =
   "https://www.linkedin.com/in/gerardo-calcagni-979135200/";
 
 export const WHATSAPP_URL =
-  "https://wa.me/+5492604586538?text=Buenas Gerardo, estoy interesado en tus servicios!";
+  "https://wa.me/+5492604586538?text=¡Buenas Gerardo!, estoy interesado en tener una entrevista con vos!";
 
 export const MAIL = "gerardo.calcagni@gmail.com";
 export const TEL = "+5492604586538";
