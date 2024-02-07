@@ -20,7 +20,7 @@ export const Experience = () => {
     <Section className="flex flex-col justify-center mx-auto gap-7">
       <SectionTitle title="Experiencia Laboral" />
       {data.map((D) => (
-        <article key={index}>
+        <article key={D.EMPRESA}>
           <header>
             <h1 className="text-xl">{D.EMPRESA}</h1>
             <span>{D.PERIODO}</span>

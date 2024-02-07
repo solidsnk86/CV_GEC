@@ -12,7 +12,7 @@ export const Education = () => {
     <Section className="flex flex-col justify-center mx-auto gap-7">
       <SectionTitle title="Educación" />
       {data.map((D) => (
-        <article key={index}>
+        <article key={D.FACULTAD}>
           <header>
             <h1 className="text-xl">{D.FACULTAD}</h1>
             <span>{D.AÑO}</span>

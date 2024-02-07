@@ -1,4 +1,5 @@
 "use client";
+import { About } from "@/components/About";
 import { Header } from "@/components/Header";
 import { Experience } from "@/components/Experience";
 import { Education } from "@/components/Education";
@@ -8,6 +9,7 @@ export default function Home() {
   return (
     <main className="flex flex-col xl:w-[60%] justify-center mx-auto xl:p-8">
       <Header />
+      <About />
       <Experience />
       <Education />
       <Footer />

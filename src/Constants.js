@@ -4,7 +4,7 @@ export const CSV_URL_HEADER =
 export const CSV_URL_EXPERIENCE =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6NAM10a3vpXzoEHpTCzgDrtPgiCVnXrANzmJijFKhNUdJhqJMx3xn_ZvMiYpROBE6ZgANgfbNfveM/pub?output=csv";
 
-export const CSV_URL_SKILLS =
+export const CSV_URL_ACERCA =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vRTKrex2nmNSWl1NLerSZ0-0dgON1ozBw_XjLYekgJgZ5HwQba6tE5BjAw2HReyMM8kOpyJ3VCcXqgD/pub?output=csv";
 
 export const CSV_URL_EDUCATION =
