@@ -1,4 +1,5 @@
 import { CSV_URL_HEADER } from "@/Constants";
+import Image from "next/image";
 import Linkedin from "@/components/icons/Linkedin";
 import { Preloader } from "@/components/Preloader";
 import { Section } from "@/Section";
@@ -29,7 +30,7 @@ export const Header = () => {
   return (
     <Section>
       {data.map((D) => (
-        <div className="container xl:flex">
+        <div className="container xl:flex" key={index}>
           <div className="info">
             <header key={D.NOMBRE}>
               <h1 className="text-3xl font-bold">{D.NOMBRE}</h1>
@@ -74,10 +75,11 @@ export const Header = () => {
             </header>
           </div>
           <figure>
-            <img
+            <Image
               src={D.IMAGEN}
               alt={D.NOMBRE}
               title={`Foto de perfil de ${D.NOMBRE}`}
+              loading="lazy"
             />
           </figure>
         </div>
