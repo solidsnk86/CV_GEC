@@ -7,14 +7,14 @@ export const Footer = () => {
     <>
       <footer className="border-t border-zinc-200/65 py-4 mt-4">
         <button
-          className="border rounded-md px-2 py-1 hover:bg-zinc-100 no-print"
+          className="border rounded-md px-2 py-1 no-print func-buttons"
           onClick={() => window.print()}
           title={`Imprimir ${METADATA.title}`}
         >
           <PrinterIcon className="w-[18px] inline text-zinc-500" />
         </button>
         <button
-          className="border rounded-md px-2 py-1 hover:bg-zinc-100 no-print"
+          className="border rounded-md px-2 py-1 no-print func-buttons"
           onClick={Share()}
           title={`Compartir ${METADATA.title}`}
         >

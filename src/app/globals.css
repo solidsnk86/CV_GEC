@@ -105,6 +105,15 @@ time {
   border: 1px solid #ddd;
 }
 
+.func-buttons {
+  transition: all 0.3s ease;
+}
+
+.func-buttons:hover {
+  background: #eee;
+  border: 1px solid #ddd;
+}
+
 footer {
   color: #555;
   font-size: 0.65rem;
