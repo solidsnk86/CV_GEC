@@ -36,7 +36,10 @@ export const Header = () => {
               <span>
                 <Worldmap /> {D.CIUDAD}
               </span>
-              <footer className="social-icons">
+              <footer className="print flex">
+                {MAIL} • {D.TEL} • {LINKEDIN_URL}
+              </footer>
+              <footer className="social-icons no-print">
                 <a
                   href={`tel:${TEL}`}
                   target="_blank"

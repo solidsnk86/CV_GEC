@@ -16,8 +16,7 @@ export const METADATA = {
     "Soy un Cadista especializado en Obra Civil con +10 años de experiencia, Arquitectura y Piping con experiencia en el sector de Oil & Gas. También ofrezco servicios de dibujo en modalidad home office, proporcionando Planos Municipales para Viviendas Unifamiliares y otras obras. Mi enfoque es la precisión y la eficiencia en cada proyecto.",
 };
 
-export const LINKEDIN_URL =
-  "https://www.linkedin.com/in/gerardo-calcagni-979135200/";
+export const LINKEDIN_URL = "https://www.linkedin.com/in/gerardo-calcagni/";
 
 export const WHATSAPP_URL =
   "https://wa.me/+5492604586538?text=¡Buenas Gerardo!, estoy interesado en tener una entrevista con vos!";

@@ -16,6 +16,7 @@ export const Footer = () => {
         <button
           className="border rounded-md px-2 py-1 hover:bg-zinc-100 no-print"
           onClick={Share()}
+          title={`Compartir ${METADATA.title}`}
         >
           <ShareIcon className="w-[18px] inline text-zinc-500" />
         </button>

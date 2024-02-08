@@ -160,8 +160,13 @@ footer {
   animation: spinn 1s linear infinite;
 }
 
+.print {
+  display: none !important;
+}
+
 @media print {
-  .no-print {
+  .no-print,
+  .update {
     display: none !important;
   }
 
