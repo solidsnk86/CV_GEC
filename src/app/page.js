@@ -1,6 +1,6 @@
 "use client";
-import Head from "next/head";
 import { About } from "@/components/About";
+import Head from "next/head";
 import { Header } from "@/components/Header";
 import { Experience } from "@/components/Experience";
 import { Education } from "@/components/Education";
@@ -11,8 +11,12 @@ export default function Home() {
     <>
       <Head>
         <link
+          rel="icon"
+          href="https://raw.githubusercontent.com/solidsnk86/CvOnline-modelo1/master/img/cv.png"
+        />
+        <link
           rel="shortcut icon"
-          href="https://github.com/solidsnk86/CvOnline-modelo1/blob/master/img/cv.png?raw=true"
+          href="https://raw.githubusercontent.com/solidsnk86/CvOnline-modelo1/master/img/cv.png"
           type="image/x-icon"
         />
       </Head>
