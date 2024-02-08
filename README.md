@@ -1,19 +1,7 @@
-<div align="center">
 <img src="solidsnk86.png" height="90px" width="auto" /> 
 <h2>
-    <em>Currículum</em> minimalista maquetado para la web e imprimir o descargar en PDF
+    <em>Currículum</em> minimalista maquetado para la web e imprimir o descargar en PDF, Este currículum es totalmente editable desde Google Sheets
 </h2>
-<p>
-Este currículum es totalmente editable desde Google Sheets
-</p>
-</div>
-
-<div align="center">
-
-![React Badge](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=fff&style=flat)
-![GitHub stars](https://img.shields.io/github/stars/solidsnk86/CV_GEC)
-
-</div>
 
 ## 🛠️ Stack
 
