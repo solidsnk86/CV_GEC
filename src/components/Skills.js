@@ -14,7 +14,7 @@ export const Skills = () => {
       <div className="grid xl:grid-cols-5 grid-cols-2">
         {data.map((D) => (
           <article key={D.APTITUDES}>
-            <p className="bg-[#EEEEEE] border border-zinc-200 px-2 py-1 rounded xl:text-xs text-[10px] text-zinc-800 m-1 w-fit">
+            <p className="bg-[#EEEEEE] border border-zinc-200 px-2 py-1 rounded-md xl:text-xs text-[10px] text-zinc-800 m-1 w-fit">
               {D.APTITUDES}
             </p>
           </article>
