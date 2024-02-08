@@ -1,7 +1,9 @@
+<div align="center">
 <img src="solidsnk86.png" height="90px" width="auto" /> 
 <h2>
     <em>Currículum</em> minimalista maquetado para la web e imprimir o descargar en PDF, Este currículum es totalmente editable desde Google Sheets
 </h2>
+</div>
 
 ## 🛠️ Stack
 
