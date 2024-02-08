@@ -37,7 +37,7 @@ export const Experience = () => {
               <>
                 <h6 className="text-sm">Referencia:</h6>
                 <p>
-                  {D.REFERENTE}:{" "}
+                  {D.REFERENTE}:
                   <a
                     className="hover:underline ease-in hover:text-zinc-700"
                     href={`tel:${D.REFERENCIA}`}
@@ -50,10 +50,10 @@ export const Experience = () => {
               </>
             ) : null}
             {D.REFERENTE2 || D.REFEMAIL ? (
-              <p className="flex">
-                {D.REFERENTE2}:{" "}
+              <p className=" flex-row">
+                {D.REFERENTE2}:
                 <a
-                  className=" inline hover:underline ease-in hover:text-zinc-700 mx-1"
+                  className="inline hover:underline ease-in hover:text-zinc-700"
                   href={`mailto:${D.REFEMAIL}`}
                   title={`Pedir referencia por correo electrónico a ${D.REFERENTE2}`}
                 >
