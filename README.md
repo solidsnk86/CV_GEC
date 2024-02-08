@@ -12,9 +12,6 @@ Este currículum es totalmente editable desde Google Sheets
 
 ![React Badge](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=fff&style=flat)
 ![GitHub stars](https://img.shields.io/github/stars/solidsnk86/CV_GEC)
-![GitHub issues](https://img.shields.io/github/issues/solidsnk86/CV_GEC)
-![GitHub forks](https://img.shields.io/github/forks/solidsnk86/CV_GEC)
-![GitHub PRs](https://img.shields.io/github/issues-pr/solidsnk86/CV_GEC)
 
 </div>
 
@@ -49,3 +46,13 @@ npm run dev
 <p>
 Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz Jarocki</a>
 </p>
+
+<div>
+
+</div>
+
+#
+
+<div align="center">
+  <p>NeoTecs Dev ©2023</p>
+</div>
