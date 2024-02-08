@@ -57,7 +57,6 @@ h4 {
   height: 6px;
   background-color: lightgreen;
   border-radius: 100%;
-  margin-top: 1px;
 }
 
 p {
@@ -125,7 +124,7 @@ footer {
 
   .info h1,
   h2,
-  span,
+  .place,
   .social-icons,
   .update {
     text-align: center;

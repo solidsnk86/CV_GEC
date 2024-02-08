@@ -33,7 +33,7 @@ export const Header = () => {
             <header>
               <h1 className="text-3xl font-bold">{D.NOMBRE}</h1>
               <h2>{D.SOY}</h2>
-              <span>
+              <span className="place">
                 <Worldmap /> {D.CIUDAD}
               </span>
               <footer className="print flex">
@@ -75,7 +75,7 @@ export const Header = () => {
               </footer>
               <ul className="py-2 flex space-x-3 update">
                 <span className="list" />
-                <p className="text-xs">Actualizado: {D.ACTUALIZACION}</p>
+                <p className="text-[10px]">Actualizado: {D.ACTUALIZACION}</p>
               </ul>
             </header>
           </div>
