@@ -34,7 +34,7 @@ export const Header = () => {
               <h1 className="text-3xl font-bold">{D.NOMBRE}</h1>
               <h2>{D.SOY}</h2>
               <span className="place">
-                <Worldmap /> {D.CIUDAD}
+                <Worldmap className="mb-[1.5px]" /> {D.CIUDAD}
               </span>
               <footer className="print flex">
                 {MAIL} • {D.TEL} • {LINKEDIN_URL}
