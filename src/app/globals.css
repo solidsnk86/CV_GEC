@@ -168,6 +168,16 @@ footer {
   animation: spinn 1s linear infinite;
 }
 
+@keyframes spinn {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .print {
   display: none !important;
 }
