@@ -192,6 +192,11 @@ footer {
     display: block !important;
   }
 
+  figure img {
+    transform: translateY(14px);
+    margin-left: 190px;
+  }
+
   article {
     break-inside: avoid;
   }

@@ -1,20 +1,27 @@
-import { CSV_URL_EDUCATION } from "@/Constants";
+import { CSV_URL_APTITUDES } from "@/Constants";
 import useData from "@/components/Data";
 import { Section } from "@/Section";
 import { SectionTitle } from "@/components/SectionTitle";
 
-const columnName = ["OBJETIVO"];
+const columnName = ["APTITUDES"];
 
-export const Footer = () => {
-  const { data } = useData(columnName, CSV_URL_EDUCATION);
+export const Skills = () => {
+  const { data } = useData(columnName, CSV_URL_APTITUDES);
+
   return (
-    <Section>
-      <SectionTitle title="Objetivos y Remuneración Pretendida" />
-      {data.map((D) => (
-        <div key={D.OBJETIVO}>{D.OBJETIVO}</div>
-      ))}
+    <Section className="grid gap-4">
+      <SectionTitle title="Aptitudes" />
+      <div className="grid xl:grid-cols-5 grid-cols-2">
+        {data.map((D) => (
+          <article key={D.APTITUDES}>
+            <p className="bg-[#EEEEEE] border border-zinc-200 px-2 py-1 rounded xl:text-xs text-[10px] text-zinc-800 m-1 w-fit">
+              {D.APTITUDES}
+            </p>
+          </article>
+        ))}
+      </div>
     </Section>
   );
 };
 
-export default Footer;
+export default Skills;

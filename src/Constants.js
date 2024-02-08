@@ -10,6 +10,9 @@ export const CSV_URL_ACERCA =
 export const CSV_URL_EDUCATION =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vT95v4u7iHRM4GM5Nqsb-JVzFFVqtdlSc4bLunZuV7LqKsa3FUIRGUE-GPde42u9zJD3osLinCiAG_8/pub?output=csv";
 
+export const CSV_URL_APTITUDES =
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vSj1zMyLqqnmHODBPO4oM0lXGI5pg-EAO2OWgWmfhbXS9jWOEF6izv-46u44TVMeJ8kpGNQ08CYCVyy/pub?output=csv";
+
 export const METADATA = {
   title: "Currículum Vitae Gerardo Calcagni",
   description:
