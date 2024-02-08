@@ -3,6 +3,7 @@ import useData from "@/components/Data";
 import Phone from "./icons/Phone";
 import { Section } from "@/Section";
 import { SectionTitle } from "@/components/SectionTitle";
+import Mail from "./icons/Mail";
 
 const columnName = [
   "EMPRESA",
@@ -11,6 +12,8 @@ const columnName = [
   "DESEMPEÑO",
   "REFERENTE",
   "REFERENCIA",
+  "REFERENTE2",
+  "REFEMAIL",
 ];
 
 export const Experience = () => {
@@ -30,18 +33,35 @@ export const Experience = () => {
             <p>{D.DESEMPEÑO}</p>
           </footer>
           <div className="py-4">
-            <h6 className="text-sm">Referencia:</h6>
-            <p>
-              {D.REFERENTE}:{" "}
-              <a
-                className="hover:underline ease-in hover:text-zinc-700"
-                href={`tel:${D.REFERENCIA}`}
-                title={`Llamar y pedir referencias a ${D.REFERENTE}`}
-              >
-                <Phone className="inline mx-1 w-[14px] mb-[3px] no-print" />
-                {D.REFERENCIA}
-              </a>
-            </p>
+            {D.REFERENTE || D.REFERENCIA ? (
+              <>
+                <h6 className="text-sm">Referencia:</h6>
+                <p>
+                  {D.REFERENTE}:{" "}
+                  <a
+                    className="hover:underline ease-in hover:text-zinc-700"
+                    href={`tel:${D.REFERENCIA}`}
+                    title={`Llamar y pedir referencias a ${D.REFERENTE}`}
+                  >
+                    <Phone className="inline mx-1 w-[14px] mb-[3px] no-print" />
+                    {D.REFERENCIA}
+                  </a>
+                </p>
+              </>
+            ) : null}
+            {D.REFERENTE2 || D.REFEMAIL ? (
+              <p className="flex">
+                {D.REFERENTE2}:{" "}
+                <a
+                  className=" inline hover:underline ease-in hover:text-zinc-700 mx-1"
+                  href={`mailto:${D.REFEMAIL}`}
+                  title={`Pedir referencia por correo electrónico a ${D.REFERENTE2}`}
+                >
+                  <Mail className="inline mx-1" />
+                  {D.REFEMAIL}
+                </a>
+              </p>
+            ) : null}
           </div>
         </article>
       ))}

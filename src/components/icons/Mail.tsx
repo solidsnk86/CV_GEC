@@ -1,4 +1,4 @@
-export default function Mail() {
+export default function Mail({ className = "" }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -10,7 +10,7 @@ export default function Mail() {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="lucide lucide-mail size-4"
+            className={`lucide lucide-mail size-4 ${className}`}
         >
             <title>Email</title>
             <rect width="20" height="16" x="2" y="4" rx="2"></rect>
