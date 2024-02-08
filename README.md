@@ -1,5 +1,5 @@
 <div align="center">
-<img src="neotecs-logo.png" height="90px" width="auto" /> 
+<img src="solidsnk86.png" height="90px" width="auto" /> 
 <h2>
     <em>Currículum</em> minimalista maquetado para la web e imprimir o descargar en PDF
 </h2>
