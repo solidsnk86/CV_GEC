@@ -80,7 +80,7 @@ export const Visit = () => {
   }, []);
 
   return (
-    <div className="text-zinc-400">
+    <div className="text-zinc-400 no-print">
       <p className="text-xs text-center">Vistas {lastVisit.id}</p>
       <div id="visit" className="p-3 text-center text-xs">
         {visitData.city && (
