@@ -1,6 +1,7 @@
 import { PrinterIcon, ShareIcon } from "lucide-react";
 import { METADATA, YEAR } from "@/Constants";
 import Share from "@/components/Share";
+import { Visit } from "@/components/Visits";
 
 export const Footer = () => {
   return (
@@ -24,6 +25,7 @@ export const Footer = () => {
       <p className="text-xs justify-center mx-auto pt-4 pb-0 mb- no-print">
         &copy;{YEAR} • {METADATA.title}
       </p>
+      <Visit />
     </>
   );
 };

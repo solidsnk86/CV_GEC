@@ -149,6 +149,12 @@ footer {
   }
 }
 
+@media (width <= 900px) {
+  body {
+    padding: 12px;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
