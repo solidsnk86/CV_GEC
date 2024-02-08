@@ -70,7 +70,7 @@ export const Header = () => {
                   <Whatsapp />
                 </a>
               </footer>
-              <ul className="py-2 flex space-x-3">
+              <ul className="py-2 flex space-x-3 update">
                 <span className="list" />
                 <p className="text-xs">Actualizado: {D.ACTUALIZACION}</p>
               </ul>
