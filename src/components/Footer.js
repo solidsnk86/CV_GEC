@@ -5,7 +5,7 @@ import Share from "@/components/Share";
 export const Footer = () => {
   return (
     <>
-      <footer className="border-t border-zinc-200/65 py-4 mt-4">
+      <footer className="border-t border-zinc-200/65 py-6 mt-6">
         <button
           className="border rounded-md px-2 py-1 no-print func-buttons"
           onClick={() => window.print()}
@@ -22,7 +22,7 @@ export const Footer = () => {
         </button>
       </footer>
       <p className="text-xs justify-center mx-auto pt-4 pb-0 mb-0">
-        &copy;{YEAR} · {METADATA.title}
+        &copy;{YEAR} • {METADATA.title}
       </p>
     </>
   );
