@@ -77,7 +77,7 @@ span {
 }
 
 figure img {
-  margin: 16px;
+  margin: 20px;
   width: 128px;
   aspect-ratio: 1 / 1;
   border-radius: 16px;
@@ -200,7 +200,7 @@ footer {
 
   figure img {
     transform: translateY(14px);
-    margin-left: 190px;
+    margin-left: 170px;
   }
 
   article {

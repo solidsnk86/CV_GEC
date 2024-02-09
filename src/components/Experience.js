@@ -36,28 +36,28 @@ export const Experience = () => {
             {D.REFERENTE || D.REFERENCIA ? (
               <>
                 <h6 className="text-sm">Referencia:</h6>
-                <p>
+                <p className="text-xs">
                   {D.REFERENTE}:
                   <a
                     className="hover:underline ease-in hover:text-zinc-700"
                     href={`tel:${D.REFERENCIA}`}
                     title={`Llamar y pedir referencias a ${D.REFERENTE}`}
                   >
-                    <Phone className="inline mx-1 w-[14px] mb-[3px] no-print" />
+                    <Phone className="inline mx-1 w-[12px] mb-[3px] no-print" />
                     {D.REFERENCIA}
                   </a>
                 </p>
               </>
             ) : null}
             {D.REFERENTE2 || D.REFEMAIL ? (
-              <p className=" flex-row">
+              <p className="text-xs">
                 {D.REFERENTE2}:
                 <a
                   className="inline hover:underline ease-in hover:text-zinc-700"
                   href={`mailto:${D.REFEMAIL}`}
                   title={`Pedir referencia por correo electrónico a ${D.REFERENTE2}`}
                 >
-                  <Mail className="inline mx-1" />
+                  <Mail className="inline w-[12px] mx-1" />
                   {D.REFEMAIL}
                 </a>
               </p>

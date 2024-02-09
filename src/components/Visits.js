@@ -80,9 +80,9 @@ export const Visit = () => {
   }, []);
 
   return (
-    <div className="text-zinc-400 no-print">
+    <div className="text-zinc-400 no-print mt-5">
       <p className="text-xs text-center">Vistas {lastVisit.id}</p>
-      <div id="visit" className="p-3 text-center text-xs">
+      <div id="visit" className="px-3 text-center text-xs">
         {visitData.city && (
           <div className="flex mx-auto justify-center">
             <p className="text-xs">
