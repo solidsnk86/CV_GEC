@@ -77,9 +77,9 @@ span {
 }
 
 figure img {
-  margin: 20px;
-  width: 120px;
-  height: 130px;
+  margin: 16px;
+  width: 128px;
+  aspect-ratio: 1 / 1;
   border-radius: 16px;
 }
 
