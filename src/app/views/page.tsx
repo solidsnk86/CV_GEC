@@ -1,7 +1,9 @@
 'use client'
 import React, { useState, useEffect } from "react";
+import { BackArrow } from "@/components/BackArrow"
 import FormatDate from "../../components/FormatDate";
 import supabase from "../../components/utils/supabase";
+import { METADATA, YEAR } from "@/Constants";
 
 interface View {
   id: number;
@@ -56,6 +58,7 @@ export const Views: React.FC = () => {
 
   return (
     <>
+      <BackArrow className="" />
       <div className="justify-center mx-auto flex my-2">
         <h2>Tabla para Información de Visitantes</h2>
       </div>
@@ -102,6 +105,11 @@ export const Views: React.FC = () => {
           <p className="font-semibold border p-1 rounded-md bg-[#eee]" key={index}>{city}</p>
         ))}
       </div>
+      <footer className="justify-center mx-auto flex py-2">
+        <p className="text-xs pt-4 pb-0 mb- no-print">
+          &copy;{YEAR} • {METADATA.title}
+        </p>
+      </footer>
     </>
   );
 };
