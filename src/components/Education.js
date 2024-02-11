@@ -3,7 +3,7 @@ import useData from "@/components/Data";
 import { Section } from "@/Section";
 import { SectionTitle } from "@/components/SectionTitle";
 
-const columnName = ["FACULTAD", "EDUCACION", "AÑO"];
+const columnName = ["FACULTAD", "EDUCACION"];
 
 export const Education = () => {
   const { data } = useData(columnName, CSV_URL_EDUCATION);
