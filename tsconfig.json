@@ -29,7 +29,7 @@
     "src/app/page.tsx",
     "src/app/page.tsx",
     "src/components/CvEncabezado.js",
-    "src/app/views/page.js"
+    "src/app/views/page.tsx"
   ],
   "exclude": ["node_modules"]
 }
