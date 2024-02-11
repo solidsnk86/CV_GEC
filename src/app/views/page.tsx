@@ -60,7 +60,7 @@ export const Views: React.FC = () => {
     <>
       <BackArrow className="" />
       <div className="justify-center mx-auto flex my-2">
-        <h2>Tabla para Información de Visitantes</h2>
+        <h2>Información de Visitantes del perfil</h2>
       </div>
       <section className="xl:p-16 xl:flex mx-auto xl:justify-center text-zinc-900 h-full overflow-x-auto">
         <table className="border-zinc-800 border z-50">
@@ -100,7 +100,7 @@ export const Views: React.FC = () => {
       <div className="table-info text-center">
         <p>Total de Visitantes:</p>
         <p className="font-semibold border p-1 rounded-md bg-[#eee]">{views.length}</p>
-        <p>Ciudades que más han visitado el perfil:</p>
+        <p>Ciudad de dónde más han visitado el perfil:</p>
         {mostVisitedCities.map((city, index) => (
           <p className="font-semibold border p-1 rounded-md bg-[#eee]" key={index}>{city}</p>
         ))}
