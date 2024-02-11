@@ -1,25 +1,12 @@
-'use client'
 import React, { useState, useEffect } from "react";
-import { BackArrow } from "@/components/BackArrow"
+import { BackArrow } from "@/components/BackArrow";
 import FormatDate from "../../components/FormatDate";
 import supabase from "../../components/utils/supabase";
 import { METADATA, YEAR } from "@/Constants";
 
-interface View {
-  id: number;
-  ip_address: string;
-  latitude: number;
-  longitude: number;
-  postal_code: string;
-  city_name: string;
-  country_name: string;
-  country_flag: string;
-  created_at: string;
-}
-
-export const Views: React.FC = () => {
-  const [views, setViews] = useState<View[]>([]);
-  const [mostVisitedCities, setMostVisitedCities] = useState<string[]>([]);
+export const Views = () => {
+  const [views, setViews] = useState([]);
+  const [mostVisitedCities, setMostVisitedCities] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -40,7 +27,7 @@ export const Views: React.FC = () => {
             const city = view.city_name;
             acc[city] = (acc[city] || 0) + 1;
             return acc;
-          }, {} as Record<string, number>);
+          }, {});
 
           const sortedCities = Object.keys(citiesMap).sort(
             (a, b) => citiesMap[b] - citiesMap[a]
@@ -99,10 +86,17 @@ export const Views: React.FC = () => {
       </section>
       <div className="table-info text-center">
         <p>Total de Visitantes:</p>
-        <p className="font-semibold border p-1 rounded-md bg-[#eee]">{views.length}</p>
+        <p className="font-semibold border p-1 rounded-md bg-[#eee]">
+          {views.length}
+        </p>
         <p>Ciudad de dónde más han visitado el perfil:</p>
         {mostVisitedCities.map((city, index) => (
-          <p className="font-semibold border p-1 rounded-md bg-[#eee]" key={index}>{city}</p>
+          <p
+            className="font-semibold border p-1 rounded-md bg-[#eee]"
+            key={index}
+          >
+            {city}
+          </p>
         ))}
       </div>
       <footer className="justify-center mx-auto flex py-2">
