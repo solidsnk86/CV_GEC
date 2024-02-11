@@ -206,3 +206,32 @@ footer {
     transform: rotate(1turn);
   }
 }
+
+.head-table th {
+  padding: 5px;
+  border: 1px solid #27272a;
+  background-color: #eee;
+  font-size: x-small;
+}
+
+.result td {
+  border: 1px solid #27272a;
+  padding: 5px;
+  font-size: x-small;
+}
+
+.table-info {
+  display: grid;
+  padding: 8px;
+  width: fit-content;
+  margin-inline: auto;
+  margin-block: 10px;
+  justify-content: center;
+  border: 1px dotted #706f6f;
+  border-radius: 6px;
+}
+
+.table-info p {
+  color: #000;
+  font-size: small;
+}

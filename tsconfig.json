@@ -28,7 +28,8 @@
     ".next/types/**/*.ts",
     "src/app/page.tsx",
     "src/app/page.tsx",
-    "src/components/CvEncabezado.js"
+    "src/components/CvEncabezado.js",
+    "src/app/views/page.js"
   ],
   "exclude": ["node_modules"]
 }
