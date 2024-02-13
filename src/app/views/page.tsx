@@ -97,7 +97,7 @@ const Views: React.FC<{}> = () => {
           </tbody>
         </table>
       </section>
-      <div className="table-info text-center">
+      <div className="table-info text-center my-4">
         <p>Total de Visitantes:</p>
         <p className="font-semibold border p-1 rounded-md bg-[#eee]">{views.length}</p>
         <p>Ciudad de dónde más han visitado el perfil:</p>
