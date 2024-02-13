@@ -10,6 +10,7 @@
 
 body {
   font-family: Menlo, Monaco, Lucida Console, "Courier New", Courier, monospace;
+  -webkit-font-smoothing: antialiased;
   background: #fff;
   margin: 0;
   padding: 0;
