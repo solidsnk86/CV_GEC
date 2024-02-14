@@ -1,17 +1,12 @@
-export const CSV_URL_HEADER =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vSjiTcbNg_buLO0HKwY1WYpSHwuFRxHf9KcTj6PvFpuzQLJYSqtjZ0Obpb7YFO255PSQF1NcGuE0Kg3/pub?output=csv";
+export const CSV_URL_HEADER = process.env.NEXT_PUBLIC_CSV_URL_HEADER;
 
-export const CSV_URL_EXPERIENCE =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6NAM10a3vpXzoEHpTCzgDrtPgiCVnXrANzmJijFKhNUdJhqJMx3xn_ZvMiYpROBE6ZgANgfbNfveM/pub?output=csv";
+export const CSV_URL_EXPERIENCE = process.env.NEXT_PUBLIC_CSV_URL_EXPERIENCE;
 
-export const CSV_URL_ACERCA =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRTKrex2nmNSWl1NLerSZ0-0dgON1ozBw_XjLYekgJgZ5HwQba6tE5BjAw2HReyMM8kOpyJ3VCcXqgD/pub?output=csv";
+export const CSV_URL_ACERCA = process.env.NEXT_PUBLIC_CSV_URL_ACERCA;
 
-export const CSV_URL_EDUCATION =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vT95v4u7iHRM4GM5Nqsb-JVzFFVqtdlSc4bLunZuV7LqKsa3FUIRGUE-GPde42u9zJD3osLinCiAG_8/pub?output=csv";
+export const CSV_URL_EDUCATION = process.env.NEXT_PUBLIC_CSV_URL_EDUCATION;
 
-export const CSV_URL_APTITUDES =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vSj1zMyLqqnmHODBPO4oM0lXGI5pg-EAO2OWgWmfhbXS9jWOEF6izv-46u44TVMeJ8kpGNQ08CYCVyy/pub?output=csv";
+export const CSV_URL_APTITUDES = process.env.NEXT_PUBLIC_CSV_URL_APTITUDES;
 
 export const METADATA = {
   title: "Currículum Vitae Gerardo Calcagni",
