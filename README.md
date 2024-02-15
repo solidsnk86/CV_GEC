@@ -48,9 +48,11 @@ npm run dev
 Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz Jarocki</a>
 </p>
 
-<p>
-Este currículum vitae tiene seguimiento de geolocalización, en lo que respecta la ciudad, el código postal, el país, su bandera y su ubicación geográfica. Los datos se obtienen mediante una API de tracking que es <a href="https://geolocation.microlink.io">microlink</a>, la cual arroja datos en formato <abbr title="Graphics Interchange Format">JSON</abbr> y se obtiene la misma con un fetch, se envía a `supabase` lo espera una tabla en `PostgreSQL` se almacenan los datos y los trae de nuevo al CV. 
-</p>
+Este currículum vitae incorpora un sistema de seguimiento de geolocalización, que incluye información sobre la ciudad, el código postal, el país, su bandera y su ubicación geográfica. La recopilación de estos datos se realiza a través de una API de geolocalización proporcionada por [microlink](https://geolocation.microlink.io). La API devuelve los datos en formato <abbr title="Graphics Interchange Format">JSON</abbr>, los cuales son obtenidos mediante un proceso de fetch.
+
+Una vez obtenidos los datos, se procede a almacenarlos en una tabla de la base de datos de `supabase`, que está basada en `PostgreSQL`. Estos datos almacenados incluyen información relevante sobre la geolocalización. Posteriormente, estos datos son recuperados de la base de datos mediante un nuevo fetch.
+
+En resumen, el flujo de trabajo consiste en la obtención de datos de geolocalización a través de la API de microlink, el almacenamiento de estos datos en una base de datos `supabase`, y finalmente, la recuperación de los datos almacenados mediante un nuevo fetch para ser integrados nuevamente en el currículum vitae.
 
 #
 
