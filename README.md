@@ -6,7 +6,7 @@
 
 <div align="center">
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on%20Vercel-Hosted-ff6000.svg?logo=vercel&logoColor=white)](https://neotecs.vercel.app/)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on%20Vercel-Hosted-00AC47.svg?logo=vercel&logoColor=white)](https://cv-gec.vercel.app/)
 
 </div>
 
