@@ -52,7 +52,7 @@ Este currículum vitae incorpora un sistema de seguimiento de geolocalización, 
 
 Una vez obtenidos los datos, se procede a almacenarlos en una tabla de la base de datos de `supabase`, que está basada en `PostgreSQL`. Estos datos almacenados incluyen información relevante sobre la geolocalización. Posteriormente, estos datos son recuperados de la base de datos mediante un nuevo fetch.
 
-Adicionalmente, este currículum vitae es totalmente editable a través de una hoja de Google Sheets. La información se sincroniza mediante un fetch de los datos desde la hoja de Google Sheets, permitiendo realizar modificaciones fácilmente.
+Adicionalmente, este currículum vitae es totalmente editable a través de una hoja de <i color="#00AC47">Google Sheets</i>. La información se sincroniza mediante un fetch de los datos desde la hoja, permitiendo realizar modificaciones fácilmente.
 
 En resumen, el flujo de trabajo consiste en la obtención de datos de geolocalización a través de la API de microlink, el almacenamiento de estos datos en una base de datos `supabase`, la posibilidad de edición desde una hoja de `Google Sheets` y, finalmente, la recuperación de los datos almacenados mediante un nuevo fetch para ser integrados nuevamente en el currículum vitae.
 
