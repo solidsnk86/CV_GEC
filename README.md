@@ -3,6 +3,17 @@
 <h2>
     "Un <em>currículum</em> minimalista diseñado para la web, con la opción de imprimir o descargar en formato PDF. Este currículum es completamente editable directamente desde Google Sheets."
 </h2>
+
+<div align="center">
+
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on%20Vercel-Hosted-ff6000.svg?logo=vercel&logoColor=white)](https://neotecs.vercel.app/)
+
+[![Supabase](https://img.shields.io/badge/Supabase-3540C8.svg?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.io/)
+
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23336791.svg?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+
+</div>
+
 </div>
 
 ## 🛠️ Stack
@@ -37,9 +48,9 @@ npm run dev
 Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz Jarocki</a>
 </p>
 
-<div>
-
-</div>
+<p>
+Este currículum vitae tiene seguimiento de geolocalización, en lo que respecta la ciudad, el código postal, el país, su bandera y su ubicación geográfica. Los datos se obtienen mediante una API de tracking que es <a href="https://geolocation.microlink.io">microlink</a>, la cual arroja datos en formato <abbr title="Graphics Interchange Format">JSON</abbr> y se obtiene la misma con un fetch, se envía a `supabase` lo espera una tabla en `PostgreSQL` se almacenan los datos y los trae de nuevo al CV. 
+</p>
 
 #
 
