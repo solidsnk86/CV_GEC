@@ -1,39 +1,37 @@
-# Un <em>currículum</em> minimalista diseñado para la web
+# 📄 Currículum Web Minimalista
 
-Con opción de imprimir o descargar en formato PDF. Este currículum es completamente editable directamente desde Google Sheets.
+Con opción de impresión y descarga en PDF, completamente editable directamente desde **Google Sheets**.
 
-### Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz Jarocki</a>
+### ✨ Inspirado en el diseño de [Bartosz Jarocki](https://github.com/BartoszJarocki/cv)
 
-Este currículum vitae incorpora un sistema de seguimiento de geolocalización, que incluye información sobre la ciudad, el código postal, el país, su bandera y su ubicación geográfica. La recopilación de estos datos se realiza a través de una API de geolocalización proporcionada por [microlink](https://geolocation.microlink.io). La API devuelve los datos en formato **JSON**, los cuales son obtenidos mediante un proceso de fetch.
+Este currículum incorpora un sistema de seguimiento de **geolocalización** que muestra datos como ciudad, código postal, país, bandera e incluso coordenadas.  
+Los datos son obtenidos a través de la API de geolocalización de [Microlink](https://geolocation.microlink.io), que devuelve un JSON procesado mediante `fetch`.
 
-Una vez obtenidos los datos, se procede a almacenarlos en una tabla de la base de datos de `supabase`, que está basada en `PostgreSQL`. Estos datos almacenados incluyen información relevante sobre la geolocalización. Posteriormente, estos datos son recuperados de la base de datos mediante un nuevo fetch.
+Una vez obtenida la información, se guarda en una base de datos gestionada por **Supabase** (basada en PostgreSQL).  
+Posteriormente, estos datos pueden recuperarse desde la base de datos y mostrarse nuevamente en el currículum.  
+Además, toda la información del currículum puede editarse de forma sencilla mediante una hoja de **Google Sheets**, desde la que se sincroniza dinámicamente con la aplicación.
 
-Adicionalmente, este currículum vitae es totalmente editable a través de una hoja de <i color="#00AC47">Google Sheets</i>. La información se sincroniza mediante un fetch de los datos desde la hoja, permitiendo realizar modificaciones fácilmente.
+✅ **En resumen:**
+- Obtiene datos de geolocalización vía API y los almacena en Supabase.
+- Los datos pueden editarse fácilmente en Google Sheets.
+- La información siempre se sincroniza y actualiza automáticamente.
 
-En resumen, el flujo de trabajo consiste en la obtención de datos de geolocalización a través de la API de microlink, el almacenamiento de estos datos en una base de datos `supabase`, la posibilidad de edición desde una hoja de `Google Sheets` y, finalmente, la recuperación de los datos almacenados mediante un nuevo fetch para ser integrados nuevamente en el currículum vitae.
+🔗 **[Ver currículum en vivo](https://cv-gec.vercel.app/)**
 
-Link: [Vista en vivo del cv](https://cv-gec.vercel.app/)
+---
 
-### 🛠️ Stack
+## 🛠️ Tecnologías
 
-- [![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://reactjs.org/)
+| React | Next.js | TypeScript | JavaScript |
+|------|---------|------------|------------|
+| ![React](https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61DAFB) | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white) | ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) |
 
-- [![Next.js](https://img.shields.io/badge/Next.js-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+| CSS | Tailwind CSS | Supabase | PostgreSQL |
+|-----|--------------|-----------|------------|
+| ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white) | ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) | ![Supabase](https://img.shields.io/badge/Supabase-3540C8?style=for-the-badge&logo=supabase&logoColor=white) | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white) |
 
-- [![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-
-- [![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-
-- [![CSS](https://img.shields.io/badge/CSS-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-
-- [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-
-- [![Supabase](https://img.shields.io/badge/Supabase-3540C8.svg?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.io/)
-
-- [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23336791.svg?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-
-#
+---
 
 <div align="center">
-  <p>SolidSnk86 ©2023</p>
+  <p>© 2023 SolidSnk86</p>
 </div>
