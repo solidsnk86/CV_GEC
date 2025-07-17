@@ -1,8 +1,4 @@
-<div align="center">
-<h2>
-    "Un <em>currículum</em> minimalista diseñado para la web, con la opción de imprimir o descargar en formato PDF. Este currículum es completamente editable directamente desde Google Sheets."
-</h2>
-</div>
+# Un <em>currículum</em> minimalista diseñado para la web, con la opción de imprimir o descargar en formato PDF. Este currículum es completamente editable directamente desde Google Sheets.
 
 ## 🛠️ Stack
 
