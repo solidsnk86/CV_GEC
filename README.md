@@ -2,6 +2,16 @@
 
 Con opción de imprimir o descargar en formato PDF. Este currículum es completamente editable directamente desde Google Sheets.
 
+### Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz Jarocki</a>
+
+Este currículum vitae incorpora un sistema de seguimiento de geolocalización, que incluye información sobre la ciudad, el código postal, el país, su bandera y su ubicación geográfica. La recopilación de estos datos se realiza a través de una API de geolocalización proporcionada por [microlink](https://geolocation.microlink.io). La API devuelve los datos en formato **JSON**, los cuales son obtenidos mediante un proceso de fetch.
+
+Una vez obtenidos los datos, se procede a almacenarlos en una tabla de la base de datos de `supabase`, que está basada en `PostgreSQL`. Estos datos almacenados incluyen información relevante sobre la geolocalización. Posteriormente, estos datos son recuperados de la base de datos mediante un nuevo fetch.
+
+Adicionalmente, este currículum vitae es totalmente editable a través de una hoja de <i color="#00AC47">Google Sheets</i>. La información se sincroniza mediante un fetch de los datos desde la hoja, permitiendo realizar modificaciones fácilmente.
+
+En resumen, el flujo de trabajo consiste en la obtención de datos de geolocalización a través de la API de microlink, el almacenamiento de estos datos en una base de datos `supabase`, la posibilidad de edición desde una hoja de `Google Sheets` y, finalmente, la recuperación de los datos almacenados mediante un nuevo fetch para ser integrados nuevamente en el currículum vitae.
+
 ### 🛠️ Stack
 
 - [![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://reactjs.org/)
@@ -19,16 +29,6 @@ Con opción de imprimir o descargar en formato PDF. Este currículum es completa
 - [![Supabase](https://img.shields.io/badge/Supabase-3540C8.svg?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.io/)
 
 - [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23336791.svg?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-
-### Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz Jarocki</a>
-
-Este currículum vitae incorpora un sistema de seguimiento de geolocalización, que incluye información sobre la ciudad, el código postal, el país, su bandera y su ubicación geográfica. La recopilación de estos datos se realiza a través de una API de geolocalización proporcionada por [microlink](https://geolocation.microlink.io). La API devuelve los datos en formato **JSON**, los cuales son obtenidos mediante un proceso de fetch.
-
-Una vez obtenidos los datos, se procede a almacenarlos en una tabla de la base de datos de `supabase`, que está basada en `PostgreSQL`. Estos datos almacenados incluyen información relevante sobre la geolocalización. Posteriormente, estos datos son recuperados de la base de datos mediante un nuevo fetch.
-
-Adicionalmente, este currículum vitae es totalmente editable a través de una hoja de <i color="#00AC47">Google Sheets</i>. La información se sincroniza mediante un fetch de los datos desde la hoja, permitiendo realizar modificaciones fácilmente.
-
-En resumen, el flujo de trabajo consiste en la obtención de datos de geolocalización a través de la API de microlink, el almacenamiento de estos datos en una base de datos `supabase`, la posibilidad de edición desde una hoja de `Google Sheets` y, finalmente, la recuperación de los datos almacenados mediante un nuevo fetch para ser integrados nuevamente en el currículum vitae.
 
 #
 
