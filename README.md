@@ -1,6 +1,6 @@
 # Un <em>currículum</em> minimalista diseñado para la web, con la opción de imprimir o descargar en formato PDF. Este currículum es completamente editable directamente desde Google Sheets.
 
-## 🛠️ Stack
+### 🛠️ Stack
 
 - [![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://reactjs.org/)
 
