@@ -12,7 +12,7 @@ Adicionalmente, este currículum vitae es totalmente editable a través de una h
 
 En resumen, el flujo de trabajo consiste en la obtención de datos de geolocalización a través de la API de microlink, el almacenamiento de estos datos en una base de datos `supabase`, la posibilidad de edición desde una hoja de `Google Sheets` y, finalmente, la recuperación de los datos almacenados mediante un nuevo fetch para ser integrados nuevamente en el currículum vitae.
 
-Link para ver el cv: [vista en vivo](https://cv-gec.vercel.app/)
+Link: [Vista en vivo del cv](https://cv-gec.vercel.app/)
 
 ### 🛠️ Stack
 
