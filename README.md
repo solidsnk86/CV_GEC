@@ -22,15 +22,16 @@ Además, toda la información del currículum puede editarse de forma sencilla m
 
 ## 🛠️ Tecnologías
 
-[<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" alt="React"/>](https://reactjs.org/)  
-[<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="40" alt="Next.js"/>](https://nextjs.org/)
-[<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" alt="TypeScript"/>](https://www.typescriptlang.org/)
-[<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" alt="JavaScript"/>](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+## 🛠️ Tecnologías
 
-[<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" alt="CSS3"/>](https://developer.mozilla.org/en-US/docs/Web/CSS) 
-[<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="40" alt="TailwindCSS"/>](https://tailwindcss.com/)
-[<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" width="40" alt="Supabase"/>](https://supabase.io/)
-[<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" alt="PostgreSQL"/>](https://www.postgresql.org/)
+| [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" alt="React"/>](https://reactjs.org/) | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="40" alt="Next.js"/>](https://nextjs.org/) | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" alt="TypeScript"/>](https://www.typescriptlang.org/) | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" alt="JavaScript"/>](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
+|:---:|:---:|:---:|:---:|
+| **React** | **Next.js** | **TypeScript** | **JavaScript** |
+
+| [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" alt="CSS3"/>](https://developer.mozilla.org/en-US/docs/Web/CSS) | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="40" alt="TailwindCSS"/>](https://tailwindcss.com/) | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" width="40" alt="Supabase"/>](https://supabase.io/) | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" alt="PostgreSQL"/>](https://www.postgresql.org/) |
+|:---:|:---:|:---:|:---:|
+| **CSS3** | **TailwindCSS** | **Supabase** | **PostgreSQL** |
+
 
 ---
 
