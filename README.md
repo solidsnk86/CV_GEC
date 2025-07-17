@@ -4,7 +4,7 @@ Con opción de impresión y descarga en PDF, completamente editable directamente
 
 ### ✨ Inspirado en el diseño de [Bartosz Jarocki](https://github.com/BartoszJarocki/cv)
 
-Este currículum incorpora un sistema de seguimiento de **geolocalización** que muestra datos como ciudad, código postal, país, bandera e incluso coordenadas.  
+Este currículum incorpora un sistema de seguimiento de **geolocalización**, que muestra datos como ciudad, código postal, país, bandera e incluso coordenadas.  
 Los datos son obtenidos a través de la API de geolocalización de [Microlink](https://geolocation.microlink.io), que devuelve un JSON procesado mediante `fetch`.
 
 Una vez obtenida la información, se guarda en una base de datos gestionada por **Supabase** (basada en PostgreSQL).  
@@ -22,13 +22,13 @@ Además, toda la información del currículum puede editarse de forma sencilla m
 
 ## 🛠️ Tecnologías
 
-| React | Next.js | TypeScript | JavaScript |
-|------|---------|------------|------------|
-| ![React](https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61DAFB) | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white) | ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) |
+| [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" alt="React"/>](https://reactjs.org/) | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="40" alt="Next.js"/>](https://nextjs.org/) | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" alt="TypeScript"/>](https://www.typescriptlang.org/) | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" alt="JavaScript"/>](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
+|:---:|:---:|:---:|:---:|
+| **React** | **Next.js** | **TypeScript** | **JavaScript** |
 
-| CSS | Tailwind CSS | Supabase | PostgreSQL |
-|-----|--------------|-----------|------------|
-| ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white) | ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) | ![Supabase](https://img.shields.io/badge/Supabase-3540C8?style=for-the-badge&logo=supabase&logoColor=white) | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white) |
+| [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" alt="CSS3"/>](https://developer.mozilla.org/en-US/docs/Web/CSS) | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="40" alt="TailwindCSS"/>](https://tailwindcss.com/) | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" width="40" alt="Supabase"/>](https://supabase.io/) | [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" alt="PostgreSQL"/>](https://www.postgresql.org/) |
+|:---:|:---:|:---:|:---:|
+| **CSS3** | **TailwindCSS** | **Supabase** | **PostgreSQL** |
 
 ---
 
