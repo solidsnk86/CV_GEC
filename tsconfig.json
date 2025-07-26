@@ -19,7 +19,8 @@
     ],
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",
@@ -28,7 +29,8 @@
     ".next/types/**/*.ts",
     "src/app/page.tsx",
     "src/components/CvEncabezado.js",
-    "src/app/views/page.tsx"
+    "src/app/views/page.tsx",
+    "src/components/About.js"
   ],
   "exclude": ["node_modules"]
 }

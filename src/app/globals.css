@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color: dark light;
+}
+
 *,
 *::after,
 *::before {

@@ -24,5 +24,3 @@ export const TEL = "+5492604586538";
 
 const date = new Date();
 export const YEAR = date.getFullYear();
-
-export const tracking = "https://geolocation.microlink.io";

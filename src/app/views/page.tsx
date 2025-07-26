@@ -1,8 +1,9 @@
-'use client';
+"use client";
+
 import React, { useState, useEffect } from "react";
 import { BackArrow } from "@/components/BackArrow";
 import FormatDate from "../../components/FormatDate";
-import supabase from "../../components/utils/supabase";
+import { supabase } from "../../components/utils/supabase";
 import { METADATA, YEAR } from "@/Constants";
 
 interface View {
@@ -99,10 +100,17 @@ const Views: React.FC<{}> = () => {
       </section>
       <div className="table-info text-center my-4">
         <p>Total de Visitantes:</p>
-        <p className="font-semibold border p-1 rounded-md bg-[#eee]">{views.length}</p>
+        <p className="font-semibold border p-1 rounded-md bg-[#eee]">
+          {views.length}
+        </p>
         <p>Ciudad de dónde más han visitado el perfil:</p>
         {mostVisitedCities.map((city, index) => (
-          <p className="font-semibold border p-1 rounded-md bg-[#eee]" key={index}>{city}</p>
+          <p
+            className="font-semibold border p-1 rounded-md bg-[#eee]"
+            key={index}
+          >
+            {city}
+          </p>
         ))}
       </div>
       <footer className="justify-center mx-auto flex py-2">
