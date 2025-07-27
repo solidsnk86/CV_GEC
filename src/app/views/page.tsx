@@ -136,7 +136,12 @@ const Views = () => {
                     className="text-zinc-800 text-xs xl:text-sm result border border-zinc-300"
                   >
                     <td>{view.id}</td>
-                    <td>{view.ip_address}</td>
+                    <td
+                      className="max-w-28 overflow-x-hidden"
+                      title={view.ip_address}
+                    >
+                      {view.ip_address}
+                    </td>
                     <td>{view.latitude}</td>
                     <td>{view.longitude}</td>
                     <td>{view.postal_code}</td>
@@ -164,7 +169,7 @@ const Views = () => {
               ? "No hay más visitantes que cargar"
               : "Cargar más visitantes"
           }
-          className="flex justify-center mx-auto my-10 w-fit px-4 py-2 border bg-gradient-to-b bg-zinc-100 to-zinc-300 hover:shadow-md disabled:cursor-not-allowed disabled:opacity-40"
+          className="flex justify-center mx-auto my-10 w-fit px-4 py-1 border bg-gradient-to-b bg-zinc-100 to-zinc-300 hover:shadow-md disabled:cursor-not-allowed disabled:opacity-40"
         >
           Cargar más
         </button>
