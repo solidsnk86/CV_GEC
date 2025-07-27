@@ -97,7 +97,7 @@ const Views = () => {
         className="xl:grid mx-auto xl:justify-center text-zinc-900 h-full overflow-x-auto"
         id="section"
       >
-        <div className="flex gap-2 items-center text-sm my-1">
+        <div className="flex gap-2 items-center text-xs my-1">
           <span className="w-4 h-4 bg-[#c6feb8c3]" />
           País Frecuente
           <span className="w-4 h-4 bg-[#b8d9fec3]" />
