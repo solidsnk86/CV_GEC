@@ -8,7 +8,7 @@ const columnName = ["APTITUDES"];
 const SkillsSkeleton = () => (
   <div className="grid xl:grid-cols-5 grid-cols-2 animate-pulse">
     {/* Generar 10 elementos skeleton para simular aptitudes */}
-    {Array.from({ length: 10 }).map((_, index) => (
+    {Array.from({ length: 6 }).map((_, index) => (
       <article key={index}>
         <div className="bg-gray-300 border border-gray-300 px-2 py-1 rounded xl:text-xs text-[10px] m-1 w-fit">
           {/* Diferentes anchos para simular texto variable */}

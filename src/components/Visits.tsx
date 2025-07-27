@@ -2,19 +2,7 @@
 
 import FormatDate from "./FormatDate";
 import { useCallback, useEffect, useState } from "react";
-import { GeolocationProps } from "@/app/types/definitions.";
-
-interface DBLocationProps {
-  id: number;
-  ip_address: string;
-  latitude: number;
-  longitude: number;
-  postal_code: string;
-  city_name: string;
-  country_name: string;
-  country_flag: string;
-  created_at: Date;
-}
+import { GeolocationProps, DBLocationProps } from "@/app/types/definitions.";
 
 const VisitSkeleton = () => (
   <div className="text-zinc-400 no-print mt-5 animate-pulse">
@@ -33,7 +21,7 @@ const VisitSkeleton = () => (
 );
 
 export const Visit = () => {
-  const [visitData, setVisitData] = useState<GeolocationProps>();
+  const [currentVisit, setCurrentVisit] = useState<GeolocationProps>();
   const [lastVisit, setLastVisit] = useState<DBLocationProps>({
     id: 0,
     ip_address: "",
@@ -51,32 +39,32 @@ export const Visit = () => {
     try {
       const res = await fetch("https://solid-geolocation.vercel.app/location");
       const data: GeolocationProps = await res.json();
-      setVisitData(data);
+      setCurrentVisit(data);
     } catch (error) {
       console.log(error);
     }
   }, []);
 
   const sendData = useCallback(async () => {
-    if (visitData) {
+    if (currentVisit) {
       try {
         await fetch("/api/supabase/send-visit", {
           method: "POST",
           body: JSON.stringify({
-            ip_address: visitData.ip,
-            city_name: visitData.city.name,
-            country_name: visitData.country.name,
-            country_flag: visitData.country.emojiFlag,
-            latitude: visitData.coords.latitude,
-            longitude: visitData.coords.longitude,
-            postal_code: visitData.city.postalCode,
+            ip_address: currentVisit.ip,
+            city_name: currentVisit.city.name,
+            country_name: currentVisit.country.name,
+            country_flag: currentVisit.country.emojiFlag,
+            latitude: currentVisit.coords.latitude,
+            longitude: currentVisit.coords.longitude,
+            postal_code: currentVisit.city.postalCode,
           }),
         });
       } catch (error) {
         console.log(error);
       }
     }
-  }, [visitData]);
+  }, [currentVisit]);
 
   useEffect(() => {
     getLocation();
@@ -96,10 +84,10 @@ export const Visit = () => {
     };
 
     getLastData();
-    if (lastVisit.ip_address !== visitData?.ip) {
+    if (lastVisit.ip_address !== currentVisit?.ip) {
       sendData();
     }
-  }, [sendData, visitData, lastVisit]);
+  }, [sendData, currentVisit, lastVisit]);
 
   // Mostrar skeleton mientras carga
   if (loading) {
@@ -110,7 +98,7 @@ export const Visit = () => {
     <div className="text-zinc-400 no-print mt-5">
       <p className="text-xs text-center">Vistas {lastVisit.id}</p>
       <div id="visit" className="px-3 text-center text-xs">
-        {visitData?.city.name && (
+        {currentVisit?.city.name && (
           <div className="flex mx-auto justify-center">
             <p className="text-xs">
               Última visita el {FormatDate(lastVisit.created_at)} desde{" "}

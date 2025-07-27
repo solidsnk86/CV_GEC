@@ -213,16 +213,16 @@ footer {
 }
 
 .head-table th {
-  padding: 5px;
-  border: 1px solid #27272a;
-  background-color: #eee;
+  padding: 8px;
+  background-color: #ddd;
   font-size: x-small;
+  border-inline: 1px solid #c3c3c3;
 }
 
 .result td {
-  border: 1px solid #27272a;
   padding: 5px;
   font-size: x-small;
+  border-inline: 1px solid #c3c3c3;
 }
 
 .table-info {
