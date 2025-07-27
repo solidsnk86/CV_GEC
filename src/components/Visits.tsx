@@ -84,10 +84,17 @@ export const Visit = () => {
     };
 
     getLastData();
-    if (lastVisit.ip_address !== currentVisit?.ip) {
+  }, []);
+
+  useEffect(() => {
+    if (
+      currentVisit &&
+      lastVisit.ip_address &&
+      lastVisit.ip_address !== currentVisit.ip
+    ) {
       sendData();
     }
-  }, [sendData, currentVisit, lastVisit]);
+  }, [currentVisit, lastVisit, sendData]);
 
   // Mostrar skeleton mientras carga
   if (loading) {
