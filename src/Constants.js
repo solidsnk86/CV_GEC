@@ -9,7 +9,7 @@ export const CSV_URL_EDUCATION = process.env.NEXT_PUBLIC_CSV_URL_EDUCATION;
 export const CSV_URL_APTITUDES = process.env.NEXT_PUBLIC_CSV_URL_APTITUDES;
 
 export const METADATA = {
-  title: "Currículum Vitae Gerardo Calcagni",
+  title: "Proyectista de Inienería ✦ Cadista ✦ Gerardo Calcagni",
   description:
     "Soy un Cadista especializado en Obra Civil con +10 años de experiencia, Arquitectura y Piping con experiencia en el sector de Oil & Gas. También ofrezco servicios de dibujo en modalidad home office, proporcionando Planos Municipales para Viviendas Unifamiliares y otras obras. Mi enfoque es la precisión y la eficiencia en cada proyecto.",
 };
