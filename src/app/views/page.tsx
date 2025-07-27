@@ -11,6 +11,9 @@ const CACHE_NAME = "cv-gec";
 const Views = () => {
   const [views, setViews] = useState<DBLocationProps[]>([]);
   const [mostVisitedCities, setMostVisitedCities] = useState<string[]>([]);
+  const [mostVisitedCountries, setMostVisitedCountries] = useState<string[]>(
+    []
+  );
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [payload, setPayload] = useState<number>(20);
 
@@ -27,13 +30,26 @@ const Views = () => {
 
         const mapCities = dataFromCache.reduce((acc, val) => {
           const city = val.city_name;
-          acc[city] = acc[city] + 1 || 1;
+          acc[city] = acc[city] + 1 || 0;
+
           return acc;
         }, {} as Record<string, number>);
 
         const sortedCities = Object.keys(mapCities).sort(
           (a, b) => mapCities[b] - mapCities[a]
         );
+
+        const mapCountries = dataFromCache.reduce((acc, val) => {
+          const country = val.country_name;
+          acc[country] = acc[country] + 1 || 0;
+
+          return acc;
+        }, {} as Record<string, number>);
+
+        const sortedCountries = Object.keys(mapCountries).sort(
+          (a, b) => mapCountries[b] - mapCountries[a]
+        );
+        setMostVisitedCountries(sortedCountries);
         setMostVisitedCities(sortedCities);
         setIsLoading(false);
         return;
@@ -52,6 +68,7 @@ const Views = () => {
 
     const mapCities = allData.reduce((acc, val) => {
       const city = val.city_name;
+      console.log(acc[city]);
       acc[city] = acc[city] + 1 || 1;
       return acc;
     }, {} as Record<string, number>);
@@ -76,7 +93,16 @@ const Views = () => {
       <div className="justify-center mx-auto flex my-2">
         <h2>Información de Visitantes del perfil</h2>
       </div>
-      <div className="xl:grid mx-auto xl:justify-center text-zinc-900 h-full overflow-x-auto">
+      <div
+        className="xl:grid mx-auto xl:justify-center text-zinc-900 h-full overflow-x-auto"
+        id="section"
+      >
+        <div className="flex gap-2 items-center text-sm my-1">
+          <span className="w-4 h-4 bg-[#c6feb8c3]" />
+          País Frecuente
+          <span className="w-4 h-4 bg-[#b8d9fec3]" />
+          Ciudad Frecuente
+        </div>
         <table className="border-zinc-400 border z-50 w-full">
           {isLoading ? (
             <>
@@ -126,31 +152,52 @@ const Views = () => {
                 </tr>
               </thead>
               <tbody>
-                {views.slice(0, payload).map((view, index) => (
-                  <tr
-                    key={view.id}
-                    id={`visit-${index}`}
-                    style={{
-                      background: index % 2 === 0 ? "#f4f4f5" : "#e4e4e7",
-                    }}
-                    className="text-zinc-800 text-xs xl:text-sm result border border-zinc-300"
-                  >
-                    <td>{view.id}</td>
-                    <td
-                      className="max-w-28 overflow-x-hidden"
-                      title={view.ip_address}
+                {views.slice(0, payload).map((view, index) => {
+                  const mostVisited = mostVisitedCities
+                    .slice(0, 1)
+                    .map((city) => city);
+                  const country = mostVisitedCountries
+                    .slice(0, 1)
+                    .map((country) => country);
+                  return (
+                    <tr
+                      key={view.id}
+                      title={
+                        mostVisited[0] === view.city_name
+                          ? "Ciudad frecuente " + view.city_name
+                          : "" || country[0] === view.country_name
+                          ? "País frecuente " + view.country_name
+                          : ""
+                      }
+                      style={{
+                        background:
+                          index % 2 === 0
+                            ? "#f4f4f5"
+                            : "#e4e4e7" && mostVisited[0] === view.city_name
+                            ? "#b8d9fec3"
+                            : "" || country[0] === view.country_name
+                            ? "#c6feb8c3"
+                            : "",
+                      }}
+                      className="text-zinc-800 text-xs xl:text-sm result border border-zinc-300"
                     >
-                      {view.ip_address}
-                    </td>
-                    <td>{view.latitude}</td>
-                    <td>{view.longitude}</td>
-                    <td>{view.postal_code}</td>
-                    <td>{view.city_name}</td>
-                    <td>{view.country_name}</td>
-                    <td>{view.country_flag}</td>
-                    <td>{FormatDate(view.created_at)}</td>
-                  </tr>
-                ))}
+                      <td>{view.id}</td>
+                      <td
+                        className="max-w-28 overflow-x-hidden"
+                        title={view.ip_address}
+                      >
+                        {view.ip_address}
+                      </td>
+                      <td>{view.latitude}</td>
+                      <td>{view.longitude}</td>
+                      <td>{view.postal_code}</td>
+                      <td>{view.city_name}</td>
+                      <td>{view.country_name}</td>
+                      <td>{view.country_flag}</td>
+                      <td>{FormatDate(view.created_at)}</td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </>
           )}
@@ -158,7 +205,7 @@ const Views = () => {
         <button
           onClick={() => {
             setPayload((prev) => prev + 10);
-            document.body.scrollIntoView({
+            document.querySelector("section")!.scrollIntoView({
               behavior: "smooth",
               block: "end",
             });
@@ -185,14 +232,19 @@ const Views = () => {
           </p>
         ))}
         <p>Ciudad de dónde más han visitado el perfil:</p>
-        {mostVisitedCities.slice(0, 1).map((city, index) => (
-          <p
-            className="font-semibold border p-1 rounded-md bg-[#eee]"
-            key={index}
-          >
-            {city}
-          </p>
-        ))}
+        {mostVisitedCities.slice(0, 1).map((city, index) => {
+          const country = mostVisitedCountries
+            .slice(0, 1)
+            .map((country) => country);
+          return (
+            <p
+              className="font-semibold border p-1 rounded-md bg-[#eee]"
+              key={index}
+            >
+              {city} - {country}
+            </p>
+          );
+        })}
       </div>
       <footer className="justify-center mx-auto flex py-2">
         <p className="text-xs pt-4 pb-0 mb- no-print">
