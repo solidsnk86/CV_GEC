@@ -9,15 +9,20 @@ Los datos son obtenidos a través de la API de geolocalización de [Solid Geoloc
 
 #
 
-Una vez obtenida la información, se guarda en una base de datos gestionada por **Supabase** (basada en PostgreSQL).  
+Una vez que se obtiene la información, se guarda en una base de datos gestionada por **Supabase** (basada en PostgreSQL).  
 Posteriormente, estos datos pueden recuperarse desde la base de datos y mostrarse nuevamente en el currículum.  
 Además, toda la información del currículum puede editarse de forma sencilla mediante una hoja de **Google Sheets**, desde la que se sincroniza dinámicamente con la aplicación.
+
+Además, para optimizar el rendimiento y evitar llamadas innecesarias, se implementa un sistema de cacheo inteligente.
+Esto permite que, incluso con múltiples fetch simultáneos (por ejemplo, cuando se visualizan varios datos dinámicos a la vez), la respuesta sea inmediata y sin penalización de velocidad.
+Gracias al uso de la Cache API del navegador, los datos ya consultados se reutilizan de forma eficiente, lo que mejora considerablemente la experiencia en escenarios con gran cantidad de registros.
 
 #
 
 ✅ **En resumen:**
 
 - Obtiene datos de geolocalización vía API y los almacena en Supabase.
+- Optimiza la velocidad mediante cacheo local con la Cache API.
 - Los datos pueden editarse fácilmente en Google Sheets.
 - La información siempre se sincroniza y actualiza automáticamente.
 

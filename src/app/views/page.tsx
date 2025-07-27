@@ -191,7 +191,9 @@ const Views = () => {
                       <td>{view.latitude}</td>
                       <td>{view.longitude}</td>
                       <td>{view.postal_code}</td>
-                      <td>{view.city_name}</td>
+                      <td className="max-w-44 overflow-x-hidden">
+                        {view.city_name}
+                      </td>
                       <td>{view.country_name}</td>
                       <td>{view.country_flag}</td>
                       <td>{FormatDate(view.created_at)}</td>
