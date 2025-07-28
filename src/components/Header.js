@@ -1,13 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
-import { CSV_URL_HEADER } from "@/Constants";
+import {
+  CSV_URL_HEADER,
+  MAIL,
+  TEL,
+  LINKEDIN_URL,
+  WHATSAPP_URL,
+} from "@/Constants";
 import Linkedin from "@/components/icons/Linkedin";
 import { Section } from "@/Section";
-import { useData } from "@/components/Data";
-import { MAIL, TEL, LINKEDIN_URL, WHATSAPP_URL } from "@/Constants";
 import Phone from "@/components/icons/Phone";
 import Mail from "@/components/icons/Mail";
 import Whatsapp from "@/components/icons/Whatsapp";
 import Worldmap from "@/components/icons/Worldmap";
+import { useFetchData } from "@/app/hooks/useFetchData";
 
 const columnName = [
   "NOMBRE",
@@ -64,7 +69,7 @@ const HeaderSkeleton = () => (
 );
 
 export const Header = () => {
-  const { data, loading } = useData(columnName, CSV_URL_HEADER);
+  const { data, loading } = useFetchData(columnName, CSV_URL_HEADER);
 
   return (
     <Section>

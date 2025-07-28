@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Papa from "papaparse";
 
-export const useData = (columnNamesFetch, customURL) => {
+export const useFetchData = (columnNamesFetch, customURL) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -83,5 +83,3 @@ export const useData = (columnNamesFetch, customURL) => {
 
   return { data, loading };
 };
-
-export default useData;

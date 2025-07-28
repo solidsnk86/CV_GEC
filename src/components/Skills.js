@@ -1,7 +1,7 @@
 import { CSV_URL_APTITUDES } from "@/Constants";
-import { useData } from "@/components/Data";
 import { Section } from "@/Section";
 import { SectionTitle } from "@/components/SectionTitle";
+import { useFetchData } from "@/app/hooks/useFetchData";
 
 const columnName = ["APTITUDES"];
 
@@ -30,7 +30,7 @@ const SkillsSkeleton = () => (
 );
 
 export const Skills = () => {
-  const { data, loading } = useData(columnName, CSV_URL_APTITUDES);
+  const { data, loading } = useFetchData(columnName, CSV_URL_APTITUDES);
 
   return (
     <Section className="grid gap-4">

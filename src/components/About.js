@@ -1,5 +1,5 @@
 import { CSV_URL_ACERCA } from "@/Constants";
-import { useData } from "@/components/Data";
+import { useFetchData } from "@/app/hooks/useFetchData";
 import { Section } from "@/Section";
 import { SectionTitle } from "@/components/SectionTitle";
 
@@ -23,7 +23,7 @@ const AboutSkeleton = () => (
 );
 
 export const About = () => {
-  const { data, loading } = useData(columnName, CSV_URL_ACERCA);
+  const { data, loading } = useFetchData(columnName, CSV_URL_ACERCA);
 
   return (
     <Section className="flex flex-col justify-center gap-7">

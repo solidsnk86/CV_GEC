@@ -31,7 +31,7 @@
     "src/components/CvEncabezado.js",
     "src/app/views/page.tsx",
     "src/components/About.js",
-    "src/components/Data.js"
+    "src/app/hooks/Data.js"
   ],
   "exclude": ["node_modules"]
 }

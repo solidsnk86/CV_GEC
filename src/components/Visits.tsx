@@ -66,10 +66,12 @@ export const Visit = () => {
     }
   }, [currentVisit]);
 
+  // Efecto para obtener la ubucación solo una vez
   useEffect(() => {
     getLocation();
   }, [getLocation]);
 
+  // Obtener la última visita
   useEffect(() => {
     const getLastData = async () => {
       try {
@@ -86,6 +88,7 @@ export const Visit = () => {
     getLastData();
   }, []);
 
+  // Efecto para envío de datos en caso de que no sea el mismo IP
   useEffect(() => {
     if (
       currentVisit &&

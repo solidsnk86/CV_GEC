@@ -1,8 +1,8 @@
 import { CSV_URL_EXPERIENCE } from "@/Constants";
-import { useData } from "@/components/Data";
-import Phone from "./icons/Phone";
+import { useFetchData } from "@/app/hooks/useFetchData";
 import { Section } from "@/Section";
 import { SectionTitle } from "@/components/SectionTitle";
+import Phone from "./icons/Phone";
 import Mail from "./icons/Mail";
 
 const columnName = [
@@ -68,7 +68,7 @@ const ExperienceSkeleton = () => (
 );
 
 export const Experience = () => {
-  const { data, loading } = useData(columnName, CSV_URL_EXPERIENCE);
+  const { data, loading } = useFetchData(columnName, CSV_URL_EXPERIENCE);
 
   return (
     <Section className="flex flex-col justify-center gap-7">
