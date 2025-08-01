@@ -5,6 +5,8 @@ import { BackArrow } from "@/components/BackArrow";
 import FormatDate from "../../components/FormatDate";
 import { METADATA, YEAR } from "@/Constants";
 import { DBLocationProps } from "../types/definitions.";
+import { CacheClear } from "./components/CacheClear";
+import { VisitCard } from "./components/VisitsCard";
 
 const CACHE_NAME = "cv-gec";
 
@@ -68,7 +70,7 @@ const Views = () => {
 
     const mapCities = allData.reduce((acc, val) => {
       const city = val.city_name;
-      console.log(acc[city]);
+
       acc[city] = acc[city] + 1 || 1;
       return acc;
     }, {} as Record<string, number>);
@@ -235,31 +237,12 @@ const Views = () => {
           Cargar más
         </button>
       </div>
-      <div className="table-info text-center my-4">
-        <p>Total de Visitantes:</p>
-        {views.slice(0, 1).map((view) => (
-          <p
-            key={view.id}
-            className="font-semibold border p-1 rounded-md bg-[#eee]"
-          >
-            {view.id}
-          </p>
-        ))}
-        <p>Ciudad de dónde más han visitado el perfil:</p>
-        {mostVisitedCities.slice(0, 1).map((city, index) => {
-          const country = mostVisitedCountries
-            .slice(0, 1)
-            .map((country) => country);
-          return (
-            <p
-              className="font-semibold border p-1 rounded-md bg-[#eee]"
-              key={index}
-            >
-              {city} - {country}
-            </p>
-          );
-        })}
-      </div>
+      <VisitCard
+        views={views}
+        mostVisitedCities={mostVisitedCities}
+        mostVisitedCountries={mostVisitedCountries}
+      />
+      <CacheClear />
       <footer className="justify-center mx-auto flex py-2">
         <p className="text-xs pt-4 pb-0 mb- no-print">
           &copy;{YEAR} • {METADATA.title}

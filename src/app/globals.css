@@ -228,7 +228,7 @@ footer {
 
 .table-info {
   display: grid;
-  padding: 8px;
+  padding: 16px;
   width: fit-content;
   margin-inline: auto;
   margin-block: 10px;
@@ -240,4 +240,13 @@ footer {
 .table-info p {
   color: #000;
   font-size: small;
+}
+
+dialog {
+  border-radius: 6px;
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(3px);
+  cursor: alias;
 }
