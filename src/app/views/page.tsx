@@ -76,8 +76,20 @@ const Views = () => {
     const sortedCities = Object.keys(mapCities).sort(
       (a, b) => mapCities[b] - mapCities[a]
     );
-    setMostVisitedCities(sortedCities);
 
+    const mapCountries = allData.reduce((acc, val) => {
+      const country = val.country_name;
+      acc[country] = acc[country] + 1 || 0;
+
+      return acc;
+    }, {} as Record<string, number>);
+
+    const sortedCountries = Object.keys(mapCountries).sort(
+      (a, b) => mapCountries[b] - mapCountries[a]
+    );
+
+    setMostVisitedCountries(sortedCountries);
+    setMostVisitedCities(sortedCities);
     setIsLoading(false);
   }, []);
 
