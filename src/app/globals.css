@@ -82,8 +82,11 @@ span {
   letter-spacing: -0.05rem;
 }
 
+figure {
+  margin-left: 20px;
+}
+
 figure img {
-  margin: 20px;
   width: 128px;
   aspect-ratio: 1 / 1;
   border-radius: 16px;

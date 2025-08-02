@@ -77,7 +77,7 @@ export const Header = () => {
         <HeaderSkeleton />
       ) : (
         data.map((D) => (
-          <div className="container xl:flex" key={D.NOMBRE}>
+          <section className="container xl:flex" key={D.NOMBRE}>
             <div className="info">
               <header>
                 <h1 className="text-3xl font-bold">{D.NOMBRE}</h1>
@@ -85,10 +85,10 @@ export const Header = () => {
                 <span className="place">
                   <Worldmap className="mb-[1.5px]" /> {D.CIUDAD}
                 </span>
-                <footer className="print flex">
+                <div className="print flex">
                   {MAIL} • {D.TEL} • {LINKEDIN_URL}
-                </footer>
-                <footer className="social-icons no-print">
+                </div>
+                <div className="social-icons no-print">
                   <a
                     href={`tel:${TEL}`}
                     target="_blank"
@@ -121,7 +121,7 @@ export const Header = () => {
                   >
                     <Whatsapp />
                   </a>
-                </footer>
+                </div>
                 <ul className="py-2 flex space-x-3 update">
                   <span className="list" />
                   <p className="text-[10px]">Actualizado: {D.ACTUALIZACION}</p>
@@ -136,7 +136,7 @@ export const Header = () => {
                 loading="lazy"
               />
             </figure>
-          </div>
+          </section>
         ))
       )}
     </Section>
