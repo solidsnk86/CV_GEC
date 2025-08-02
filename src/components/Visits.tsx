@@ -66,7 +66,7 @@ export const Visit = () => {
     }
   }, [currentVisit]);
 
-  // Efecto para obtener la ubucación solo una vez
+  // Efecto para obtener la ubicación solo una vez
   useEffect(() => {
     getLocation();
   }, [getLocation]);

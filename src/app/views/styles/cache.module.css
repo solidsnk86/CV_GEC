@@ -1,0 +1,9 @@
+.cache::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 8px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #f4f4f5;
+}

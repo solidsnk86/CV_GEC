@@ -1,12 +1,13 @@
 import { openDialog } from "@/dialog";
 import { InfoIcon, Trash2 } from "lucide-react";
+import styles from "../styles/cache.module.css";
 
 export const CacheClear = () => {
   const clearCache = async () => {
     try {
-      const cacheName = "csv-cache";
-      const success = await caches.delete(cacheName);
-      if (success) {
+      const success_csv_cache = await caches.delete("csv-cache");
+      const success_views_cache = await caches.delete("cv-gec");
+      if (success_csv_cache && success_views_cache) {
         openDialog({
           content: (
             <div className="p-6">
@@ -29,11 +30,13 @@ export const CacheClear = () => {
   };
 
   return (
-    <div className="p-4 rounded border border-amber-200 bg-amber-100 my-16 relative">
+    <div className="p-4 rounded border border-amber-100 bg-amber-50 my-16 relative">
       <h3 className="flex gap-2 items-center text-lg font-semibold">
         <span className="group">
           <InfoIcon size={18} className="text-blue-500 hover:text-blue-700" />
-          <div className="absolute -top-10 left-0 bg-zinc-100 p-4 rounded-md border hidden group-hover:flex">
+          <div
+            className={`absolute -top-11 left-0 bg-zinc-100 p-4 rounded-md border hidden group-hover:flex ${styles.cache}`}
+          >
             <p className="text-sm text-zinc-700">
               Los datos han sido guardados en la caché del navegador para
               mejorar el rendimiento y reducir la carga innecesaria del
