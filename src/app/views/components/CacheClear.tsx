@@ -29,9 +29,18 @@ export const CacheClear = () => {
   };
 
   return (
-    <div className="p-4 rounded border border-red-200 bg-red-100 my-16">
+    <div className="p-4 rounded border border-amber-200 bg-amber-100 my-16 relative">
       <h3 className="flex gap-2 items-center text-lg font-semibold">
-        <InfoIcon size={18} />
+        <span className="group">
+          <InfoIcon size={18} className="text-blue-500 hover:text-blue-700" />
+          <div className="absolute -top-10 left-0 bg-zinc-100 p-4 rounded-md border hidden group-hover:flex">
+            <p className="text-sm text-zinc-700">
+              Los datos han sido guardados en la caché del navegador para
+              mejorar el rendimiento y reducir la carga innecesaria del
+              servidor.
+            </p>
+          </div>
+        </span>
         Limpiar datos
       </h3>
       <article className="flex justify-between gap-3 mt-2">
@@ -44,7 +53,7 @@ export const CacheClear = () => {
         <aside>
           <button
             onClick={clearCache}
-            className="flex gap-1 text-zinc-50 items-center border border-red-400 bg-gradient-to-b from-red-400 to-red-600 px-4 py-1 rounded hover:brightness-110"
+            className="flex gap-1 text-zinc-50 items-center border amber-red-400 bg-gradient-to-b from-amber-400 to-amber-600 px-4 py-1 rounded hover:brightness-110"
           >
             <Trash2 size={16} />
             Limpiar

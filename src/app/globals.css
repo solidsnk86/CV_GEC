@@ -226,24 +226,65 @@ footer {
   border-inline: 1px solid #c3c3c3;
 }
 
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
 .table-info {
+  rotate: 0;
   display: grid;
+  position: relative;
   padding: 16px;
   width: fit-content;
+  background: conic-gradient(
+    from var(--rotate),
+    #00daf4 0%,
+    #5edc99 10%,
+    #3861bc 20%,
+    #5606ef 30%,
+    #d400a5 40%,
+    #ee4c54 50%,
+    #ff7800 60%,
+    #ffaf00 70%,
+    #ffc800 80%,
+    #bada6d 100%,
+    #00daf4 110%
+  );
   margin-inline: auto;
   margin-block: 10px;
   justify-content: center;
-  border: 1px dotted #706f6f;
   border-radius: 6px;
+  animation: rotate 3s linear infinite both;
+}
+
+.table-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #f4f4f4, #f5f5f5);
+  inset: 2px;
+  z-index: 1;
+  border-radius: 4px;
 }
 
 .table-info p {
-  color: #000;
+  color: #181818;
   font-size: small;
+  z-index: 3;
+}
+
+@keyframes rotate {
+  to {
+    --rotate: 360deg;
+  }
 }
 
 dialog {
   border-radius: 6px;
+  filter: drop-shadow(0 0 10px #181818);
 }
 
 dialog::backdrop {

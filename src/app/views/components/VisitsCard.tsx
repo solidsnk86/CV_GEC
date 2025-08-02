@@ -15,7 +15,7 @@ export const VisitCard = ({
       {views.slice(0, 1).map((view) => (
         <p
           key={view.id}
-          className="font-semibold border p-1 rounded-md bg-[#eee]"
+          className="font-semibold border p-1 rounded-md bg-gradient-to-b bg-zinc-200 to-zinc-300"
         >
           {view.id}
         </p>
@@ -27,7 +27,7 @@ export const VisitCard = ({
           .map((country) => country);
         return (
           <p
-            className="font-semibold border p-1 rounded-md bg-[#eee]"
+            className="font-semibold border p-1 rounded-md bg-gradient-to-b bg-zinc-200 to-zinc-300"
             key={index}
           >
             {city} - {country}

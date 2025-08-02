@@ -104,8 +104,10 @@ const Views = () => {
       <div className="mt-2">
         <BackArrow className="" />
       </div>
-      <div className="justify-center mx-auto flex my-2">
-        <h2>Información de Visitantes del perfil</h2>
+      <div className="justify-center mx-auto flex my-6">
+        <h2 className="text-xl font-bold">
+          Información de Visitantes del perfil
+        </h2>
       </div>
       <div
         className="xl:grid mx-auto xl:justify-center text-zinc-900 h-full overflow-x-auto"
@@ -120,30 +122,27 @@ const Views = () => {
         <table className="border-zinc-400 border z-50 w-full">
           {isLoading ? (
             <>
-              <thead className="border-zinc-400 border text-justify">
-                <tr className="head-table">
+              <thead className="text-left">
+                <tr>
                   {Array.from({ length: 9 }).map((_, index) => (
-                    <th
-                      key={`th-${index}`}
-                      className="animate-pulse bg-zinc-300 w-16 h-6"
-                    >
-                      &nbsp;
+                    <th key={`skeleton-th-${index}`} className="px-2 py-2">
+                      <div className="h-4 w-20 bg-zinc-300 rounded animate-pulse" />
                     </th>
                   ))}
                 </tr>
               </thead>
               <tbody>
-                {Array.from({ length: 20 }).map((_, index) => (
+                {Array.from({ length: 15 }).map((_, rowIndex) => (
                   <tr
-                    key={index}
-                    className="text-zinc-800 text-xs xl:text-sm result border border-zinc-300 bg-zinc-100"
+                    key={`skeleton-row-${rowIndex}`}
+                    className="border-b border-zinc-200"
                   >
-                    {Array.from({ length: 9 }).map((_, index) => (
+                    {Array.from({ length: 9 }).map((_, colIndex) => (
                       <td
-                        key={`td-${index}`}
-                        className="animate-pulse bg-zinc-300 w-16 h-6"
+                        key={`skeleton-td-${rowIndex}-${colIndex}`}
+                        className="px-2 py-2"
                       >
-                        &nbsp;
+                        <div className="h-4 w-full bg-zinc-200 rounded animate-pulse" />
                       </td>
                     ))}
                   </tr>
