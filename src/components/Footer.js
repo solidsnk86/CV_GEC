@@ -22,7 +22,7 @@ export const Footer = () => {
           <ShareIcon className="w-[18px] inline text-zinc-500" />
         </button>
       </footer>
-      <p className="text-xs justify-center mx-auto pt-4 pb-0 mb- no-print">
+      <p className="text-xs justify-center text-center mx-auto pt-4 pb-0 mb- no-print">
         &copy;{YEAR} • {METADATA.title}
       </p>
       <Visit />
